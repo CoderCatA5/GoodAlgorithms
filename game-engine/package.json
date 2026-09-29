@@ -1,15 +1,17 @@
 {
   "name": "game-engine",
   "version": "0.1.0",
-  "description": "Minigame puzzle generators. Games: Figure Sequences, Linear System.",
+  "description": "Minigame puzzle generators. Games: Figure Sequences, Linear System, Latin Squares.",
   "type": "module",
   "bin": {
     "figure-seq": "bin/generate.js",
-    "linear-sys": "bin/linear-systems.js"
+    "linear-sys": "bin/linear-systems.js",
+    "latin-sq": "bin/latin-squares.js"
   },
   "scripts": {
     "generate": "node bin/generate.js",
-    "generate:linear": "node bin/linear-systems.js"
+    "generate:linear": "node bin/linear-systems.js",
+    "generate:latin": "node bin/latin-squares.js"
   },
   "dependencies": {
     "chalk": "^5.3.0"
