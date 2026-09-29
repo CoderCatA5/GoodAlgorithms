@@ -1,3 +1,7 @@
 hallo
 
-Collection of minigames puzzles to improve your brain 
+Collection of minigames puzzles to improve your brain
+
+Games (in game-engine/):
+  - Figure Sequences:  node bin/generate.js --level 3 --seed 42
+  - Linear System:     node bin/linear-systems.js --level 3 --seed 42 --answer
