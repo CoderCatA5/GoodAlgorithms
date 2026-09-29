@@ -42,15 +42,6 @@ export const PATTERN_TIERS = {
   ],
 };
 
-/** All factories from tier 1 up to and including `maxTier`. */
-export function factoriesUpTo(maxTier) {
-  const out = [];
-  for (let tier = 1; tier <= maxTier; tier++) {
-    if (PATTERN_TIERS[tier]) out.push(...PATTERN_TIERS[tier]);
-  }
-  return out;
-}
-
 /**
  * Relative frequency of each movement tier. Lower (simpler) tiers are weighted
  * more heavily so plain lateral/vertical moves stay common even once diagonals
@@ -59,10 +50,11 @@ export function factoriesUpTo(maxTier) {
 export const TIER_WEIGHTS = { 1: 3, 2: 2, 3: 1 };
 
 /**
- * Like `factoriesUpTo`, but each tier's factories are repeated according to
- * `TIER_WEIGHTS`. A uniform `rng.pick` over the returned pool therefore favours
- * simpler moves. (Repetition keeps the "pick a factory" call site trivial and
- * leaves `altPattern`'s shuffle/filter working unchanged.)
+ * All factories from tier 1 up to and including `maxTier`, with each tier's
+ * factories repeated according to `TIER_WEIGHTS`. A uniform `rng.pick` over the
+ * returned pool therefore favours simpler moves. (Repetition keeps the "pick a
+ * factory" call site trivial and leaves `altPattern`'s shuffle/filter working
+ * unchanged.)
  */
 export function weightedFactoriesUpTo(maxTier) {
   const out = [];

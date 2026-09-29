@@ -7,13 +7,3 @@
 export function mod(n, m) {
   return ((n % m) + m) % m;
 }
-
-/** Structural equality of two positions. */
-export function samePos(a, b) {
-  return a.x === b.x && a.y === b.y;
-}
-
-/** Stable string key for a position (useful for Set/Map de-duplication). */
-export function posKey(p) {
-  return `${p.x},${p.y}`;
-}
