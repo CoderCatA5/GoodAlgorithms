@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+build/
+
+# Vite cache
+.vite/
+**/.vite/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Screenshots / debug images (loose .png files in repo root or app dirs)
+*.png
+*.jpg
+*.jpeg
+*.webp
+!**/public/**/*.png
+!**/public/**/*.jpg
+!**/public/**/*.jpeg
+!**/public/**/*.webp
+
+# Playwright output
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# Claude internal
+.claude/worktrees/
