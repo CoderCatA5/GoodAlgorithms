@@ -45,8 +45,8 @@ export function levelConfig(level = 1) {
     // Magnitude of a nonzero coefficient (sign applied separately).
     coeffRange: { min: 1, max: coeffMax },
 
-    // Negatives only from level 2 up — level 1 stays all-positive and gentle.
-    allowNegativeCoeffs: lvl >= 2,
+    // No negative coefficients — keep equations readable and answers positive.
+    allowNegativeCoeffs: false,
 
     zeroChance,
   };

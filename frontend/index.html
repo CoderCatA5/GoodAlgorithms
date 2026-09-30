@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoodAlgorithms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="app-header">
+      <div id="logo">
+        <svg id="logo-sketch" width="32" height="32" viewBox="0 0 32 32"></svg>
+        <span id="logo-text">GoodAlgorithms</span>
+      </div>
+      <nav id="tab-nav">
+        <wired-button id="btn-home"      class="nav-btn active" data-tab="home">Home</wired-button>
+        <wired-button id="btn-puzzles"   class="nav-btn"        data-tab="puzzles">Puzzles</wired-button>
+        <wired-button id="btn-analytics" class="nav-btn"        data-tab="analytics">Analytics</wired-button>
+      </nav>
+    </header>
+
+    <main id="tab-content">
+      <div id="tab-home" class="tab-panel active"></div>
+      <div id="tab-puzzles" class="tab-panel"></div>
+      <div id="tab-analytics" class="tab-panel"></div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

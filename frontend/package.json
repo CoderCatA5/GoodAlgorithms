@@ -1,0 +1,20 @@
+{
+  "name": "good-algorithms-frontend",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "roughjs": "^4.6.6",
+    "wired-elements": "^2.1.2"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
+  }
+}
