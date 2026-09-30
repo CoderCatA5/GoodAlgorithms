@@ -1,5 +1,6 @@
 import 'wired-elements';
 import './style.css';
+import rough from 'roughjs';
 import { renderHome } from './tabs/home.js';
 import { renderPuzzles } from './tabs/puzzles.js';
 import { renderAnalytics } from './tabs/analytics.js';
@@ -71,7 +72,6 @@ requestAnimationFrame(() => {
 });
 
 // ── Logo sketch ───────────────────────────────────────────────────────────────
-import rough from 'roughjs';
 const logoSvg = document.getElementById('logo-sketch');
 if (logoSvg) {
   const rc = rough.svg(logoSvg);
